@@ -7,17 +7,17 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from Brute import login
+        from enc64 import login
  
-        login()
+        MainMenu()
  
  
  
 elif bit == "32bit":
 	try:
-		from Bruta import login
-		login() 
+		from enc32 import login
+		MainMenu() 
 	except Exception as e:
-		os.system('python ganteng.py')
+		print('Device tidak mendukung')
 else:
-	os.system('python ganteng.py') 
+	print('Device tidak mendukung')
