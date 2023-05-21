@@ -7,7 +7,7 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from enc64 import login
+        from enc64 import MainMenu
  
         MainMenu()
  
@@ -15,7 +15,7 @@ if bit == "64bit":
  
 elif bit == "32bit":
 	try:
-		from enc32 import login
+		from enc32 import MainMenu
 		MainMenu() 
 	except Exception as e:
 		print('Device tidak mendukung')
